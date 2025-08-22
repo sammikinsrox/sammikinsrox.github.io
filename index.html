@@ -296,6 +296,26 @@
             margin-bottom: 1rem;
         }
         
+        /* Music-specific styling */
+        .music-icon {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffd93d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        /* Game development specific styling */
+        .game-icon {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
         .skill-title {
             font-size: 1.3rem;
             font-weight: 600;
@@ -370,6 +390,24 @@
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 500;
+        }
+        
+        .music-tag {
+            background: rgba(255, 215, 61, 0.2);
+            color: #ffd93d;
+        }
+        
+        .game-tag {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--accent-purple);
+        }
+        
+        .music-project {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.1) 0%, rgba(255, 215, 61, 0.1) 100%);
+        }
+        
+        .game-project {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
         }
         
         .project-links {
@@ -548,8 +586,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#development">Development</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#games">Games</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -559,15 +598,15 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Hi, I'm Sammi</h1>
-            <p class="hero-subtitle">Developer • Creator • Problem Solver</p>
+            <p class="hero-subtitle">Developer • Game Developer • Musician</p>
             <p class="hero-description">
-                I craft digital experiences with clean code and creative solutions. 
-                Passionate about building meaningful projects that make a difference.
+                I create across multiple mediums - crafting code, composing music, and designing games. 
+                Passionate about building experiences that inspire, entertain, and connect people.
             </p>
             <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
+                <a href="#development" class="btn btn-primary">
                     <i class="fas fa-rocket"></i>
-                    View My Work
+                    Explore My Work
                 </a>
                 <a href="#contact" class="btn btn-secondary">
                     <i class="fas fa-envelope"></i>
@@ -589,28 +628,27 @@
             </div>
             <div class="about-text">
                 <p>
-                    Hello! I'm a passionate developer with a love for creating beautiful, 
-                    functional digital experiences. My journey in tech began with curiosity 
-                    and has evolved into a deep appreciation for clean code, user-centered 
-                    design, and innovative problem-solving.
+                    Hello! I'm a multidisciplinary creator who expresses through code, music, and interactive experiences. 
+                    My journey spans software development, music composition, and game design - each discipline 
+                    informing and enriching the others.
                 </p>
                 <p>
-                    When I'm not coding, you can find me exploring new technologies, 
-                    contributing to open-source projects, or sharing knowledge with the 
-                    developer community. I believe in the power of technology to create 
-                    positive change in the world.
+                    As a developer, I craft clean, efficient code and intuitive user experiences. As a musician, 
+                    I explore sonic landscapes and emotional storytelling through sound. As a game developer, 
+                    I combine technical skills with creative vision to build engaging interactive worlds.
                 </p>
                 <p>
-                    I'm always excited to collaborate on interesting projects and connect 
-                    with fellow creators who share a passion for building amazing things.
+                    I believe that creativity thrives at the intersection of disciplines. Whether I'm debugging code, 
+                    composing a melody, or designing game mechanics, I'm always seeking that perfect balance of 
+                    technical precision and artistic expression.
                 </p>
             </div>
         </div>
     </section>
     
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">What I Do</h2>
+    <!-- Development Section -->
+    <section id="development">
+        <h2 class="section-title">Development</h2>
         <div class="skills-grid">
             <div class="skill-card fade-in">
                 <div class="skill-icon">
@@ -644,12 +682,106 @@
             </div>
             <div class="skill-card fade-in">
                 <div class="skill-icon">
-                    <i class="fas fa-palette"></i>
+                    <i class="fas fa-database"></i>
                 </div>
-                <h3 class="skill-title">UI/UX Design</h3>
+                <h3 class="skill-title">Data & Analytics</h3>
                 <p class="skill-description">
-                    Designing intuitive interfaces that prioritize user experience 
-                    and accessibility across all devices.
+                    Working with databases, data processing, and creating tools 
+                    for mathematical and analytical applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music">
+        <h2 class="section-title">Music</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon music-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3 class="skill-title">Composition</h3>
+                <p class="skill-description">
+                    Creating original musical compositions across genres, from ambient 
+                    soundscapes to rhythmic electronic pieces.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon music-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3 class="skill-title">Production</h3>
+                <p class="skill-description">
+                    Recording, mixing, and mastering audio using digital audio 
+                    workstations and professional production techniques.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon music-icon">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <h3 class="skill-title">Sound Design</h3>
+                <p class="skill-description">
+                    Crafting unique sounds and audio effects for multimedia 
+                    projects, games, and artistic expressions.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon music-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3 class="skill-title">Performance</h3>
+                <p class="skill-description">
+                    Live performance and improvisation, bringing musical 
+                    ideas to life in real-time settings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games">
+        <h2 class="section-title">Game Development</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon game-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3 class="skill-title">Game Design</h3>
+                <p class="skill-description">
+                    Conceptualizing gameplay mechanics, level design, and player 
+                    experience to create engaging interactive entertainment.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon game-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <h3 class="skill-title">3D Development</h3>
+                <p class="skill-description">
+                    Creating 3D environments, character models, and interactive 
+                    systems using modern game engines and tools.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon game-icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3 class="skill-title">Mechanics Programming</h3>
+                <p class="skill-description">
+                    Implementing game logic, physics systems, and player controls 
+                    to bring game concepts to life.
+                </p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon game-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="skill-title">Player Experience</h3>
+                <p class="skill-description">
+                    Focusing on user interface design, accessibility, and player 
+                    feedback to create inclusive gaming experiences.
                 </p>
             </div>
         </div>
@@ -657,17 +789,17 @@
     
     <!-- Projects Section -->
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Featured Work</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
                 <div class="project-image">
                     <i class="fas fa-calculator"></i>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Math Expression Generator</h3>
+                    <h3 class="project-title">Open Math Gen</h3>
                     <p class="project-description">
                         An interactive tool for generating and visualizing mathematical 
-                        expressions with KaTeX rendering and real-time preview.
+                        worksheets with KaTeX rendering and real-time preview.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">JavaScript</span>
@@ -689,56 +821,60 @@
             </div>
             
             <div class="project-card fade-in">
-                <div class="project-image">
-                    <i class="fas fa-rocket"></i>
+                <div class="project-image music-project">
+                    <i class="fas fa-music"></i>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Two</h3>
+                    <h3 class="project-title">Musical Compositions</h3>
                     <p class="project-description">
-                        A brief description of your second project. Highlight the key 
-                        features and technologies used to build this amazing application.
+                        Original compositions spanning ambient, electronic, and experimental genres. 
+                        Each piece explores different sonic textures and emotional landscapes.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag music-tag">FL Studio / Pro Tools</span>
+                        <span class="tech-tag music-tag">Sound Design</span>
+                        <span class="tech-tag music-tag">Synthesis</span>
+                        <span class="tech-tag music-tag">Mixing</span>
+                        <span class="tech-tag music-tag">Mastering</span>
+                        <span class="tech-tag music-tag">Tutoring</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
+                            <i class="fas fa-play"></i>
+                            Listen
                         </a>
                         <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
+                            <i class="fas fa-download"></i>
+                            Download
                         </a>
                     </div>
                 </div>
             </div>
             
             <div class="project-card fade-in">
-                <div class="project-image">
-                    <i class="fas fa-heart"></i>
+                <div class="project-image game-project">
+                    <i class="fas fa-gamepad"></i>
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Three</h3>
+                    <h3 class="project-title">Interactive Game Experiences</h3>
                     <p class="project-description">
-                        Description of your third project. Explain what makes this 
-                        project special and what problems it solves for users.
+                        Experimental games focusing on unique mechanics, atmospheric storytelling, 
+                        and player agency. Exploring the intersection of art and interactivity.
                     </p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag game-tag">Unity</span>
+                        <span class="tech-tag game-tag">C#</span>
+                        <span class="tech-tag game-tag">Game Design</span>
+                        <span class="tech-tag game-tag">3D Modeling</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
+                            <i class="fas fa-play-circle"></i>
+                            Play Demo
                         </a>
                         <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Code
+                            <i class="fab fa-itch-io"></i>
+                            itch.io
                         </a>
                     </div>
                 </div>
